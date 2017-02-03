@@ -22,12 +22,8 @@
         <activity
             android:name=".ui.FactsActivity"
             android:label="@string/title_activity_facts"
-            android:parentActivityName=".ui.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.MainActivity"/>
         </activity>
     </application>
 

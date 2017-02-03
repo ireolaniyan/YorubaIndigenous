@@ -8,18 +8,22 @@ public class Page {
     private String mText;
     private Choice mChoice;
     private boolean mIsFinal = false;
+    private boolean mIsPressed = false;
 
     public Page(int imageId, String text, Choice choice) {
         mImageId = imageId;
         mText = text;
         mChoice = choice;
+        mIsPressed = true;
     }
 
+//    Overloaded constructor for last array index that doesn't have a "Choice".
     public Page(int imageId, String text){
         mImageId = imageId;
         mText = text;
         mChoice = null;
         mIsFinal = true;
+        mIsPressed = true;
     }
 
     public int getImageId() {
@@ -53,4 +57,12 @@ public class Page {
     public void setFinal(boolean aFinal) {
         mIsFinal = aFinal;
     }
+
+    /*public boolean isPressed() {
+        return mIsPressed;
+    }
+
+    public void setPressed(boolean pressed) {
+        mIsPressed = pressed;
+    }*/
 }

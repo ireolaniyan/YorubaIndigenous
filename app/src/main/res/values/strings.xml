@@ -6,6 +6,7 @@
     <string name="textViewHint">What state are you from?</string>
     <string name="startButtonText">START YOUR ADVENTURE</string>
     <string name="startDescription">Yoruba Indigenous</string>
+    <string name="back">Back</string>
 
     <string name="lagos1"
             translatable="false">Lagos State is the most populous state in Nigeria but the smallest in land area. The famous yellow buses, widely known as Danfo which means \"hurry\" in Yoruba is the major mode of transportation. The capital of Lagos is Ikeja.</string>

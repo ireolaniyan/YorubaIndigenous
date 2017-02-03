@@ -9,6 +9,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,6 +25,7 @@ public class FactsActivity extends AppCompatActivity {
     private Button mChoice;
     private Page mCurrentPage;
     private long slideDuration = 300;
+    private ImageButton mBackButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,7 @@ public class FactsActivity extends AppCompatActivity {
         mImageView = (ImageView) findViewById(R.id.factImageView);
         mTextView = (TextView) findViewById(R.id.factTextView);
         mChoice = (Button) findViewById(R.id.choiceButton);
+        mBackButton = (ImageButton) findViewById(R.id.backButton);
 
         loadPage(0);
 
@@ -53,6 +56,24 @@ public class FactsActivity extends AppCompatActivity {
         mImageView.setImageDrawable(drawable);
 
         mTextView.setText(mCurrentPage.getText());
+
+        mBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int previousPage = mCurrentPage.getChoice().getPreviousPage();
+                loadPage(previousPage);
+            }
+        });
+
+        /*if (mBackButton.isPressed()){
+            mBackButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int previousPage = mCurrentPage.getChoice().getPreviousPage();
+                    loadPage(previousPage);
+                }
+            });
+        }*/
 
         if (mCurrentPage.isFinal()){
             mChoice.setText(R.string.finalButton);
@@ -74,5 +95,7 @@ public class FactsActivity extends AppCompatActivity {
                 }
             });
         }
+
+
     }
 }
