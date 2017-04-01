@@ -23,40 +23,21 @@ import com.ireolaniyan.yorubaindigenous.R;
 
 public class MainActivity extends AppCompatActivity {
 
-//    private EditText mNameField;
 //    TODO: swipe up instead of StartButton
     private Button mStartButton;
-//    private ImageView mImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        mNameField = (EditText) findViewById(R.id.nameEditText);
         mStartButton = (Button) findViewById(R.id.startButton);
-//        mImageView = (ImageView) findViewById(R.id.titleImageView);
 
         if (mStartButton != null) {
             mStartButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    /*Slide slide = new Slide();
-                    slide.setSlideEdge(Gravity.TOP);
-                    ViewGroup root = (ViewGroup) findViewById(R.id.titleImageView);
-                    TransitionManager.beginDelayedTransition(root, slide);
-                    mImageView.setVisibility(View.INVISIBLE);*/
-
-                    mStartButton.animate()
-                            .alpha(0f)
-                            .translationY(-mStartButton.getHeight())
-                            .setDuration(getResources().getInteger(android.R.integer.config_shortAnimTime))
-                            .withEndAction(new Runnable() {
-                                @Override
-                                public void run() {
-                                    startFacts();
-                                }
-                            });
+                    startFacts();
                 }
             });
         }
@@ -72,5 +53,10 @@ public class MainActivity extends AppCompatActivity {
         else {
             startActivity(intent);
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 }

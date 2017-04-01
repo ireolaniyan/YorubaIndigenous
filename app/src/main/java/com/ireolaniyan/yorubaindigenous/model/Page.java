@@ -7,23 +7,29 @@ public class Page {
     private int mImageId;
     private String mText;
     private Choice mChoice;
+    private Back mBack;
     private boolean mIsFinal = false;
-    private boolean mIsPressed = false;
 
-    public Page(int imageId, String text, Choice choice) {
+  /*  public Page(int imageId, String text, Choice choice) {
         mImageId = imageId;
         mText = text;
         mChoice = choice;
-        mIsPressed = true;
+    }*/
+
+    public Page(int imageId, String text, Choice choice, Back back) {
+        mImageId = imageId;
+        mText = text;
+        mChoice = choice;
+        mBack = back;
     }
 
 //    Overloaded constructor for last array index that doesn't have a "Choice".
-    public Page(int imageId, String text){
+    public Page(int imageId, String text, Back back){
         mImageId = imageId;
         mText = text;
+        mBack = back;
         mChoice = null;
         mIsFinal = true;
-        mIsPressed = true;
     }
 
     public int getImageId() {
@@ -58,11 +64,11 @@ public class Page {
         mIsFinal = aFinal;
     }
 
-    /*public boolean isPressed() {
-        return mIsPressed;
+    public Back getBack() {
+        return mBack;
     }
 
-    public void setPressed(boolean pressed) {
-        mIsPressed = pressed;
-    }*/
+    public void setBack(Back back) {
+        mBack = back;
+    }
 }

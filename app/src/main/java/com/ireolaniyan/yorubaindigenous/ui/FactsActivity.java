@@ -60,20 +60,10 @@ public class FactsActivity extends AppCompatActivity {
         mBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int previousPage = mCurrentPage.getChoice().getPreviousPage();
+                int previousPage = mCurrentPage.getBack().getPreviousPage();
                 loadPage(previousPage);
             }
         });
-
-        /*if (mBackButton.isPressed()){
-            mBackButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    int previousPage = mCurrentPage.getChoice().getPreviousPage();
-                    loadPage(previousPage);
-                }
-            });
-        }*/
 
         if (mCurrentPage.isFinal()){
             mChoice.setText(R.string.finalButton);
@@ -95,7 +85,5 @@ public class FactsActivity extends AppCompatActivity {
                 }
             });
         }
-
-
     }
 }
