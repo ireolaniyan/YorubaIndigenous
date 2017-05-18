@@ -10,12 +10,6 @@ public class Page {
     private Back mBack;
     private boolean mIsFinal = false;
 
-  /*  public Page(int imageId, String text, Choice choice) {
-        mImageId = imageId;
-        mText = text;
-        mChoice = choice;
-    }*/
-
     public Page(int imageId, String text, Choice choice, Back back) {
         mImageId = imageId;
         mText = text;
@@ -36,10 +30,6 @@ public class Page {
         return mImageId;
     }
 
-    public void setImageId(int imageId) {
-        mImageId = imageId;
-    }
-
     public String getText() {
         return mText;
     }
@@ -50,10 +40,6 @@ public class Page {
 
     public Choice getChoice() {
         return mChoice;
-    }
-
-    public void setChoice(Choice choice) {
-        mChoice = choice;
     }
 
     public boolean isFinal() {
