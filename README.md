@@ -12,6 +12,8 @@ You can check out the screenshots.
 
 ![ScreenShot](https://github.com/ire-ola/YorubaIndigenous/blob/master/ekiti2.png)
 
+![ScreenShot](file:///home/ire/Desktop/Screenshot_1497377671.png)
+
 
 
 
