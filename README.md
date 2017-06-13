@@ -4,8 +4,7 @@ This is a story app that lets you know a few things about Yoruba States in Niger
 You can check out the screenshots.
 
 
-file:///home/ire/Desktop/Screenshot_1497377671.png
-
+![ScreenShot](https://github.com/ire-ola/YorubaIndigenous/blob/master/ekiti.png)
 
 
 
