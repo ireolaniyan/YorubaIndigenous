@@ -7,6 +7,10 @@ You can check out the screenshots.
 ![ScreenShot](https://github.com/ire-ola/YorubaIndigenous/blob/master/ekiti.png)
 
 
+![ScreenShot](https://github.com/ire-ola/YorubaIndigenous/blob/master/lagos.png)
+
+
+![ScreenShot](https://github.com/ire-ola/YorubaIndigenous/blob/master/ekiti2.png)
 
 
 
