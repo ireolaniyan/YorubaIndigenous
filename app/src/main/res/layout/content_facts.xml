@@ -17,7 +17,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@mipmap/page_0"
+        android:src="@mipmap/page_4"
         android:scaleType="fitXY"
         android:adjustViewBounds="true"
         android:contentDescription="@string/lagosDescription"/>
@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lagos1"
+        android:text="Construction of the best prime real estate in West Africa, Eko Atlantic City started in 2008. It is being built on reclaimed land off Ahmadu Bello Way on Victoria Island into the Atlantic Ocean. It is one of Africa's biggest marine engineering projects. The new island will accommodate 250,000 residents and 150,000 commuters. A sea barrier, fondly referred to as the \'Great Wall of Lagos\' is being built to protect the city against ocean surge."
         android:id="@+id/factTextView"
         android:layout_below="@+id/factImageView"
         android:layout_alignParentLeft="true"
